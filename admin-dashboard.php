@@ -29,7 +29,14 @@
 
         <div>
              <div class="mt-16 ml-24">
-               <button type="submit" class="rounded-lg bg-black text-white px-4 py-2     transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."><a href="upload.php">Add</a> </button>
+               <button type="submit" class=" rounded-lg bg-black text-white px-4 py-2 
+                   transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 
+                   hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+                   <a href="upload.php">Add</a> 
+
+                 
+              </button>
+              
              </div>
         
          
