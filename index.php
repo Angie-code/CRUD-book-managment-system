@@ -45,7 +45,7 @@
         </div>
             	
         <div>
-            <h1 class="text-black text-4xl font-hk font-bold ml-10   ">Available books</h1>
+            <h1 class="text-black text-4xl font-hk font-bold ml-10  text-center ">Available books</h1>
             <div class="flex justify-center items-center ">
                 
              <div class="mt-8  grid md:grid-cols-4 gap-10  mx-10">
