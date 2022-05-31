@@ -6,7 +6,7 @@
     --secondary: #bbc1ec;
     --default: #fffffe;
     --border: #b6b3b3;
-    --dark: #253377;
+    --dark:  rgb(30 58 138);;
     margin: 0;
     padding: 0;
     /* Fonts */
@@ -227,7 +227,7 @@ header{
     padding: 1rem;
     padding-inline: 2rem;
     z-index: 999;
-    box-shadow: 0 0 4px var(--primary);
+    box-shadow:10px 5px 5px rgb(30 58 138);
 }
 #mNav{
     display: none;
