@@ -42,7 +42,7 @@
           else{
             $row= mysqli_fetch_assoc($result);
             if($row["pwd"] === $_POST["password"]){
-               header("Location:./admin-dashboard.php");
+               header("Location:./index.html");
             }
             else{
                 $errors["pass"]= "Incorrect Password";

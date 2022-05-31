@@ -1,5 +1,5 @@
 <?php
-    include "include/add.php";
+    include "add.php";
     
 ?>
 
