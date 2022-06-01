@@ -14,12 +14,12 @@
 <body>
     <header>
         <h2>### e-Library</h2>
-        <div class="flex" style="--gap: 4rem; " >
+        <div class="flex" style="--gap: 4rem;">
     <!-- Desktop Navigation Bar -->
             <nav>
                 <ul>
-                    <li>HOME</li>
-                    <li>read</li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="books.php">read</a></li>
                     <li>About</li>
                     <li>contact</li>
                 </ul>
@@ -33,7 +33,6 @@
     <div id="main"  ">
         <div id="landingPage">
             <div style="width: 40%;" class="grid">
-
                 <form  method="post" action="index.php">
                 <p>
                     Browse through our almighty catalog of good books and reference notes.
@@ -43,10 +42,8 @@
                 <p>
                     Built with love! ❤️
                 <p>
-                <button type="submit">  Browse Books!</button>
-
+                <button type="submit"><a href="books.php"> Browse Books!</a></button>
             </form>
-
             </div>
            <!-- landing page image -->
            <div>
@@ -56,14 +53,6 @@
         
         
         
-
-
-
-
-
-
-
-
     </div>
 <footer>
     <div>
@@ -92,6 +81,5 @@
 <div class="endNote">
     <p>Documentation. Privacy Policy.</p>
 </div>
-
 </body>
 </html>
