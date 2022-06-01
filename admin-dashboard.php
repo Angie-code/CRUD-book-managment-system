@@ -19,10 +19,10 @@
                 <h1 class="text-2xl font-bold">ADMIN</h1>
             </div>
             <div>
-                <a href="#" class="ml-4">Home</a>
-                <a href="#" class="ml-4">Books</a>
-                <a href="#" class="ml-4">Contact</a>
-                <a href="#" class="ml-4">About</a>
+                <a href="index.php" class="ml-4">HOME</a>
+                <a href="books.php" class="ml-4">BOOKS</a>
+                <a href="#" class="ml-4">CONTACT</a>
+                <a href="#" class="ml-4">ABOUT</a>
                 
             </div> 
        </div> 
