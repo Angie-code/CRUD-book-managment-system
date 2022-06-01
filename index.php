@@ -1,9 +1,4 @@
-<?php
-include "config/conn.php";
 
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
