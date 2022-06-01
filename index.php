@@ -1,6 +1,9 @@
 <?php
-    include "config/conn.php";
-    include "image.php";
+include "config/conn.php";
+
+include "image.php";
+ 
+    
 
     $sql= "SELECT book_name, author, prod_year FROM books ORDER BY id";
     $results= mysqli_query($conn, $sql);

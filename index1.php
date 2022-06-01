@@ -1,3 +1,10 @@
+<?php
+include "config/conn.php";
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +19,7 @@
 <body>
     <header>
         <h2>### e-Library</h2>
-        <div class="flex" style="--gap: 4rem;">
+        <div class="flex" style="--gap: 4rem; " >
     <!-- Desktop Navigation Bar -->
             <nav>
                 <ul>
