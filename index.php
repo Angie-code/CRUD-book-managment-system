@@ -1,85 +1,95 @@
-<?php
-    include "config/conn.php";
-    include "image.php";
-
-    $sql= "SELECT book_name, author, prod_year FROM books ORDER BY id";
-    $results= mysqli_query($conn, $sql);
-
-    $books= mysqli_fetch_all($results, MYSQLI_ASSOC);
-  
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Library</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-
+   <link rel="stylesheet" href="css/style.css"> 
+   <link rel="stylesheet" href="css/all.css"> 
+    <script src="script.js" defer></script>
+    <title>e-Library</title>
 </head>
-
-<body class="text-white bg-white">
+<body>
+    <header>
+        <h2>### e-Library</h2>
+        <div class="flex" style="--gap: 4rem;">
+    <!-- Desktop Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="books.php">read</a></li>
+                    <li>About</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+    <!-- Nav ends here -->
+    <!-- Avatar -->
+            <img src="images/Avatar.png" width="70px" height="auto" style="border-radius: 50%;" alt="">
+        </div>
+    </header>
     
-    <div>
-        <div class="bg-blue-500 p-4 flex justify-between">
-            <div>
-                <h1 class="text-2xl font-bold">LMS</h1>
-            </div>
-            <div>
-                <a href="#" class="ml-4">Home</a>
-                <a href="#" class="ml-4">Books</a>
-                <a href="#" class="ml-4">Contact</a>
-                <a href="#" class="ml-4">About</a>
-                
-            </div>  
-        </div>
-            	
-        <div>
-            <h1 class=" text-black text-4xl font-hk font-bold ml-10  text-center "></h1>
-            <div class="flex justify-center items-center ">
-                
-             <div class="mt-8  grid md:grid-cols-4 gap-10  mx-10">
-                 <?php include "config/conn.php";
-                 $sql= "SELECT * FROM books";
-                 $results= mysqli_query($conn,$sql);
+    <div id="main"  ">
+        <div id="landingPage">
+            <div style="width: 40%;" class="grid">
 
-                 if(mysqli_num_rows($results)){
-                    while($row= mysqli_fetch_array($results)){ ?>
-                      <div class="bg-gray-300 hover:text-black overflow-hidden shadow-2xl rounded transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ... ">
-                        <img src="images/<?php echo $row["image_name"]?>" alt="book-cover" class="w-full h-60 w-30 " >
-                   
-                          <div class="px-6 pb-2 pt-4  ">
-                              <h2 class="font-bold text-xl    "><?php echo $row["book_name"] ?></h2>
-                              <p class="block text-sm text-gray-600">By <?php echo $row["author"] ?></p>
-                              <p class="block text-sm text-gray-600"><?php echo $row["prod_year"] ?></p>
-                          </div>
-                        </div>
-                  <?php
-                  }
-                 }
-                 else{
-                     echo "Books not found";
-                  }
-                 ?>
-             </div>
-                </div>
-            </div>
-        </div>
+                <form  method="post" action="index.php">
+                <p>
+                    Browse through our almighty catalog of good books and reference notes.
+                </p>
+                
+                <h4>Oh! Your favourite Book is available for your reading pleasure.</h4>
+                <p>
+                    Built with love! ❤️
+                <p>
+                <button type="submit"><a href="books.php"> Browse Books!</a></button>
 
+            </form>
+
+            </div>
+           <!-- landing page image -->
+           <div>
+                <img src="images/undraw_book_lover_re_rwjy.svg" alt="">
+           </div>
+        </div>
+        
+        
         
 
- 
+
+
+
+
+
+
 
     </div>
+<footer>
+    <div>
+        <div>
+            <ul>
+                <li>Quick Links:</li>
+                <li>Search</li>
+                <li>Library</li>
+                <li>References</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Categories:</li>
+                <li>Sciences</li>
+                <li>Technology</li>
+                <li>Art</li>
+                <li>Entertainment</li>
+                <li>Security</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="endNote">
+    <p>Documentation. Privacy Policy.</p>
+</div>
+
 </body>
 </html>
