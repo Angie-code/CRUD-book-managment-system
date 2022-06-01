@@ -23,7 +23,7 @@
        $sql= "UPDATE books set id= $id, image_name='$image', book_name='$bookname', author='$auth_name', prod_year='$prod_year' where id=$id";
 
         if(mysqli_query($conn,$sql)){
-            echo "success";
+         header("Location:./admin-dashboard.php");
         }
         else{
           echo "Query Error: ".mysqli_error($conn);
