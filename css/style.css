@@ -227,7 +227,7 @@ header{
     padding: 1rem;
     padding-inline: 2rem;
     z-index: 999;
-    box-shadow:10px 5px 5px rgb(23, 44, 102);
+    box-shadow:10px 5px 5px  rgb(6, 21, 60);
 }
 #mNav{
     display: none;
