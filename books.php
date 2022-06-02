@@ -6,6 +6,8 @@
     $results= mysqli_query($conn, $sql);
 
     $books= mysqli_fetch_all($results, MYSQLI_ASSOC);
+
+    
   
 
 ?>
