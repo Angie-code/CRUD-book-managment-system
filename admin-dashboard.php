@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class=" bg-blue-900">
+    <div class=" bg-blue-900 ">
 
         <div class="bg-blue-900 p-4 flex justify-between text-white shadow-2xl" >
             <div>
